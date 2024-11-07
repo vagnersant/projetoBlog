@@ -3,14 +3,15 @@
         props: {
             titulo: String,
             corpoDoTexto: String,
-            autor: String
+            autor: String,
+            imagem: String
         }
     }
 </script>
 
 <template>
     <div class="post">
-        <img src="../assets/logo.svg">
+        <img :src="imagem">
         <h2>{{titulo}}</h2>
         <p>
           {{corpoDoTexto}}

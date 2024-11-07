@@ -1,6 +1,10 @@
+<script setup>
+    import PostModelo from "./PostModelo.vue"
+    import imagemPost1 from "../assets/logo.svg"
+</script>
+
 <template>
     <div class="post">
-        <img src="../assets/logo.svg">
         <PostModelo 
           titulo="Titulo da postagem 1"
           corpoDoTexto="
@@ -10,6 +14,7 @@
           Suspendisse sagittis dolor nec enim eleifend tincidunt. Aliquam at dui tempor, rutrum libero vel, pulvinar purus. Donec consectetur ac ante et eleifend. Duis sit amet augue et eros vehicula sollicitudin eu ac risus. Suspendisse blandit elit et nisl aliquet, eu blandit leo vestibulum. Phasellus sollicitudin pellentesque vulputate. Sed.
           "
           autor="Vagner dos Santos"
+          :imagem="imagemPost1"
         />
       </div>
 </template>
